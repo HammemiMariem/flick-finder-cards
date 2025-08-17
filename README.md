@@ -1,73 +1,127 @@
-# Welcome to your Lovable project
+# CineExplorer - Movie Discovery App
 
-## Project info
+A beautiful, responsive movie explorer application built with React, TypeScript, and Tailwind CSS. Features a cinematic dark theme with smooth animations and an intuitive card-based interface for browsing movies.
 
-**URL**: https://lovable.dev/projects/6daa0f59-4fff-4886-b6e6-868422dc352f
+## 🎬 Features
 
-## How can I edit this code?
+- **Responsive Movie Cards**: Beautiful card-based layout with movie posters, ratings, and details
+- **Search & Filter**: Real-time search across movie titles, genres, and descriptions
+- **Cinematic Design**: Dark theme with golden accents and smooth hover animations
+- **Interactive UI**: Hover effects, animated transitions, and polished user experience
+- **Mobile Responsive**: Optimized for all screen sizes
 
-There are several ways of editing your application.
+## 🚀 Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18 + TypeScript
+- **Styling**: Tailwind CSS with custom design system
+- **UI Components**: Shadcn/ui components
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **Code Quality**: ESLint + TypeScript strict mode
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6daa0f59-4fff-4886-b6e6-868422dc352f) and start prompting.
+## 🎨 Design System
 
-Changes made via Lovable will be committed automatically to this repo.
+The app uses a custom cinematic design system with:
+- **Primary Colors**: Deep cinematic blues and dark grays
+- **Accent Colors**: Golden yellow for highlights and interactions
+- **Typography**: Clean, readable fonts optimized for movie titles and descriptions
+- **Animations**: Smooth transitions using CSS custom properties
+- **Gradients**: Cinematic gradients for depth and visual interest
 
-**Use your preferred IDE**
+## 📱 Components
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Core Components
+- `MovieCard`: Interactive movie display card with poster, rating, and details
+- `SearchBar`: Real-time search input with filter options
+- `Index`: Main page layout with header, search, and movie grid
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Features
+- Hover animations on movie cards
+- Real-time search filtering
+- Responsive grid layout
+- Rating badges with star icons
+- Genre categorization
+- Play and info action buttons
 
-Follow these steps:
+## 🛠 Installation & Setup
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd cine-explorer
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## 📂 Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # Shadcn UI components
+│   ├── MovieCard.tsx   # Movie display card
+│   └── SearchBar.tsx   # Search input component
+├── data/               # Static data and types
+│   └── movies.ts       # Movie database
+├── assets/             # Generated movie posters
+├── pages/              # Page components
+│   └── Index.tsx       # Main explorer page
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+└── index.css          # Global styles & design system
 ```
 
-**Edit a file directly in GitHub**
+## 🎯 Usage
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. **Browse Movies**: Scroll through the featured movie collection
+2. **Search**: Use the search bar to filter movies by title, genre, or description
+3. **Interact**: Hover over cards to see action buttons and animations
+4. **Responsive**: Access on any device with optimized layouts
 
-**Use GitHub Codespaces**
+## 🔧 Customization
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Adding New Movies
+Edit `src/data/movies.ts` to add new movie entries:
 
-## What technologies are used for this project?
+```typescript
+{
+  id: "new-movie",
+  title: "Movie Title",
+  poster: "path/to/poster.jpg",
+  rating: 8.5,
+  year: 2024,
+  genre: "Action",
+  description: "Movie description...",
+  duration: "2h 15min"
+}
+```
 
-This project is built with:
+### Styling
+Customize the design system in:
+- `src/index.css` - Color tokens and CSS variables
+- `tailwind.config.ts` - Tailwind theme extensions
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📄 License
 
-## How can I deploy this project?
+This project is open source and available under the MIT License.
 
-Simply open [Lovable](https://lovable.dev/projects/6daa0f59-4fff-4886-b6e6-868422dc352f) and click on Share -> Publish.
+## 🤝 Contributing
 
-## Can I connect a custom domain to my Lovable project?
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Built with ❤️ using modern web technologies
